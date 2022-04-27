@@ -1855,7 +1855,7 @@ np.sum([8.097658e-03, 2.882766e-02, 5.693666e-02, 2.591250e-03, 0.009312, 2.3078
 # In[107]:
 
 
-sim.loc[(sim['Sex'] == 'Female') & ('sim['Genotype'] ), :]
+sim.loc[(sim['Sex'] == 'Female') & (sim['Genotype'] ), :]
 
 
 # In[114]:
@@ -2202,7 +2202,7 @@ for gen in range(1,numGens+1):
             M_cm_weights[fa_g_i][mo_g_i] = [eval(son) for son in s_p]
             
         else:
-            
+            later = "finish later"
             
         
         offspring = np.random.poisson(fertility*(1-Ffc[mo_g_i])*(1-Mfc[fa_g_i]))
@@ -3112,5 +3112,5 @@ def stochastic_sim(alleles, mods, sex_det,
         adults[0].append([])
         adults[1].append([])
         
-    for 
+    #for 
 
